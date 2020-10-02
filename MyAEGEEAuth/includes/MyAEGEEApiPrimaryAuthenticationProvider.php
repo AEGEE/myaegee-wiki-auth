@@ -43,8 +43,8 @@ class MyAEGEEApiPrimaryAuthenticationProvider
 	public function __construct( $params = [] ) {
 		parent::__construct( $params );
 		$this->baseHost = 'https://my.aegee.eu';
-		$this->loginUrl = $this->baseHost.'/services/oms-core-elixir/api/login';
-		$this->getUserUrl = $this->baseHost.'/services/oms-core-elixir/api/members/me';
+		$this->loginUrl = $this->baseHost.'/api/core/login';
+		$this->getUserUrl = $this->baseHost.'/api/core/members/me';
 	}
 
 	/**
